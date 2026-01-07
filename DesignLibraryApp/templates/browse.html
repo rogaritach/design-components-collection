@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Browse Components</h2>
+
+<div class="filters">
+  <span>Filters coming soon…</span>
+</div>
+
+<div class="components-grid">
+  {% for c in components %}
+  <a href="/component/{{ c.id }}" class="component-card glass-card">
+  <h3 class="component-title">{{ c.title }}</h3>
+  <p class="component-description">{{ c.description }}</p>
+
+  <div class="tags">
+    {% for tag in c.tags %}
+    <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+
+  <span class="view-text">View</span>
+</a>
+
+  {% endfor %}
+</div>
+{% endblock %}

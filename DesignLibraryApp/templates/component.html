@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ component.title }}</h2>
+<p class="component-description">{{ component.description }}</p>
+
+<div class="component-detail-layout">
+
+  <div class="component-preview">
+    <h3>Preview</h3>
+    <div class="preview-box">
+      {{ component.html | safe }}
+    </div>
+  </div>
+
+  <div class="component-code">
+    <h3>HTML</h3>
+    <pre><code>{{ component.html }}</code></pre>
+
+    <h3>CSS</h3>
+    <pre><code>{{ component.css }}</code></pre>
+  </div>
+
+</div>
+{% endblock %}

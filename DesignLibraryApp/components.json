@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Glass Card",
+    "description": "Frosted glass card with backdrop blur and soft shadow",
+    "category": "card",
+    "tags": ["card", "glass", "modern", "balanced"],
+    "html": "<div class='glass-card'><h3>Glass Morphism</h3><p>Frosted glass effect with backdrop blur</p></div>",
+    "css": ".glass-card { background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04)); backdrop-filter: blur(14px); border-radius: 16px; padding: 1.5rem; box-shadow: 0 12px 32px rgba(0,0,0,0.12); }"
+  },
+  {
+    "id": 2,
+    "title": "Glass Button",
+    "description": "Primary action button with glassmorphism effect",
+    "category": "button",
+    "tags": ["button", "glass", "bold", "modern"],
+    "html": "<button class='glass-button'>Get Started</button>",
+    "css": ".glass-button { padding: 0.75rem 1.5rem; border-radius: 999px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); font-weight: 600; }"
+  },
+  {
+    "id": 3,
+    "title": "Soft Input",
+    "description": "Minimal input field with soft focus ring",
+    "category": "input",
+    "tags": ["input", "minimal", "professional", "light"],
+    "html": "<input class='soft-input' placeholder='Email address' />",
+    "css": ".soft-input { padding: 0.75rem 1rem; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1); }"
+  },
+  {
+    "id": 4,
+    "title": "Feature Card",
+    "description": "Simple marketing card for feature highlights",
+    "category": "card",
+    "tags": ["card", "minimal", "professional", "balanced"],
+    "html": "<div class='feature-card'><h3>Fast Integration</h3><p>Copy & paste clean HTML and CSS.</p></div>",
+    "css": ".feature-card { padding: 1.75rem; border-radius: 16px; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }"
+  },
+  {
+    "id": 5,
+    "title": "Info Alert",
+    "description": "Subtle information alert for notifications",
+    "category": "alert",
+    "tags": ["alert", "minimal", "modern", "light"],
+    "html": "<div class='alert info'><strong>Info:</strong> This component supports dark mode.</div>",
+    "css": ".alert.info { padding: 1rem; border-radius: 12px; background: rgba(99,102,241,0.1); color: #6366f1; }"
+  },
+  {
+    "id": 6,
+    "title": "Toggle Switch",
+    "description": "Interactive toggle switch for settings",
+    "category": "toggle",
+    "tags": ["toggle", "interactive", "dynamic", "modern"],
+    "html": "<label class='switch'><input type='checkbox'><span class='slider'></span></label>",
+    "css": ".switch { position: relative; width: 44px; height: 24px; } .slider { background: #ccc; border-radius: 999px; }"
+  },
+  {
+    "id": 7,
+    "title": "Status Badge",
+    "description": "Small status indicator pill",
+    "category": "badge",
+    "tags": ["badge", "minimal", "professional", "light"],
+    "html": "<span class='status-pill success'>Active</span>",
+    "css": ".status-pill { padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.75rem; }"
+  }
+]

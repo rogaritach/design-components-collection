@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="quiz-page">
+
+  <header class="quiz-header">
+    <h2>Component Recommendation Quiz</h2>
+    <p>
+      Answer a few questions and we’ll suggest UI components that fit your
+      style and project needs.
+    </p>
+  </header>
+
+  <section class="quiz-container glass-card">
+
+    <form class="quiz-form" id="quiz-form">
+
+      <div class="quiz-question">
+        <label for="interaction">
+          1. What type of interaction do you prefer?
+        </label>
+        <select id="interaction" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="minimal">Minimal</option>
+          <option value="bold">Bold</option>
+          <option value="dynamic">Dynamic</option>
+        </select>
+      </div>
+
+      <div class="quiz-question">
+        <label for="weight">
+          2. How much visual weight do you want?
+        </label>
+        <select id="weight" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="light">Light</option>
+          <option value="balanced">Balanced</option>
+          <option value="heavy">Heavy & Rich</option>
+        </select>
+      </div>
+
+      <div class="quiz-question">
+        <label for="mood">
+          3. What mood are you aiming for?
+        </label>
+        <select id="mood" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="professional">Professional</option>
+          <option value="elegant">Elegant</option>
+          <option value="modern">Modern</option>
+        </select>
+      </div>
+
+      <div class="quiz-question">
+        <label for="type">
+          4. What component are you looking for?
+        </label>
+        <select id="type" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="card">Card</option>
+          <option value="button">Button</option>
+          <option value="input">Input</option>
+          <option value="modal">Modal</option>
+        </select>
+      </div>
+
+      <button type="submit" class="quiz-submit">
+        Get Recommendations
+      </button>
+
+    </form>
+
+  </section>
+
+  <section class="quiz-results" id="quiz-results"></section>
+
+</section>
+
+{% endblock %}
